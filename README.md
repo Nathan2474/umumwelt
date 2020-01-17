@@ -1,3 +1,3 @@
 # Umumwelt
 
-school ember projekt v0 using Ember.js
+school projekt v0 using Ember.js
