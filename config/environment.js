@@ -2,7 +2,7 @@
 
 module.exports = function(environment) {
   let ENV = {
-    modulePrefix: 'umwelt12',
+    modulePrefix: 'umumwelt',
     environment,
     rootURL: '/',
     locationType: 'auto',
