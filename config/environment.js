@@ -21,7 +21,15 @@ module.exports = function(environment) {
       // Here you can pass flags/options to your application instance
       // when it is created
     },
-    //GOOGLE - API
+    firebase: {
+   apiKey: "AIzaSyAW7ZXj0LXcJxZfz8uJ8U81vW_9Xb748cc",
+   authDomain: "umumwelt.firebaseapp.com",
+   databaseURL: "https://umumwelt.firebaseio.com",
+   projectId: "umumwelt",
+   storageBucket: "umumwelt.appspot.com",
+   messagingSenderId: "255382540838",
+   appId: "1:255382540838:web:0d90dff0e10ad8dafecce7"
+  },
     torii: {
       sessionServiceName: 'session'
     }
