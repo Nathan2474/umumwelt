@@ -7,10 +7,10 @@ export default class Router extends EmberRouter {
 }
 
 Router.map(function() {
-  this.route('kochbuch', function() {
+  this.route('rezepte', function() {
     this.route('neu');
+  });
+  this.route('rezept', {path: 'rezepte/:rezept_myid'}, function() {
     this.route('editieren');
   });
-  this.route('rezepttitel');
-  this.route('rezept');
 });

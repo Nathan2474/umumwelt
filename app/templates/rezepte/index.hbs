@@ -1,0 +1,22 @@
+<h1>Index Route</h1>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-4">
+      <BsNav
+        @type="pills"
+        @justified={{false}}
+        @stacked={{true}}
+        @fill={{false}} as |nav|
+      >
+          {{#each model as |rezept|}}
+            <nav.item>
+              {{#link-to 'rezept' rezept.myid}}
+                {{rezept.name}}
+              {{/link-to}}
+              </nav.item>
+          {{/each}}
+      </BsNav>
+    </div>
+    <div class="col-8">{{outlet}}</div>
+  </div>
+</div>

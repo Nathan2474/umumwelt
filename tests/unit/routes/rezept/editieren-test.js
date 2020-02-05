@@ -1,11 +1,11 @@
 import { module, test } from 'qunit';
 import { setupTest } from 'ember-qunit';
 
-module('Unit | Route | kochbuch/editieren', function(hooks) {
+module('Unit | Route | rezept/editieren', function(hooks) {
   setupTest(hooks);
 
   test('it exists', function(assert) {
-    let route = this.owner.lookup('route:kochbuch/editieren');
+    let route = this.owner.lookup('route:rezept/editieren');
     assert.ok(route);
   });
 });
