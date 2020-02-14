@@ -1,4 +1,3 @@
-<h1>Index Route</h1>
 <div class="container-fluid">
   <div class="row">
     <div class="col-4">
@@ -8,6 +7,7 @@
         @stacked={{true}}
         @fill={{false}} as |nav|
       >
+          <h3>Rezepte</h3>
           {{#each model as |rezept|}}
             <nav.item>
               {{#link-to 'rezept' rezept.myid}}
@@ -17,6 +17,30 @@
           {{/each}}
       </BsNav>
     </div>
-    <div class="col-8">{{outlet}}</div>
+    <div class="col-8">
+      <h4>Willkommen auf unsere Website, schön, dass du deinen Weg zu "Um Umwelt" gefunden hast.</h4>
+      Wir sind eine Gruppe engagierter Schülerinnen und Schüler aus Wien haben uns im Rahmen unseres Deutschunterrichts zusammengetan, um eine Website zum Thema natürliche und nachhaltige Kosmetik, beziehungsweise Snacks, zu gestalten.
+      <p></p>
+      Unsere <b>umumwelt</b> Tipps:
+      <ol>
+        <li>Wiederverwendbare Wasserflaschen, Shoppingbags und Jausenboxen.
+          Anstatt sich jeden Tag eine neue Plastikflasche zu kaufen oder beim Wocheneinkauf jedes mal ein neues Plastik Saukerl zu verwenden, ist es  viel sinnvoller in länger-haltende, wiederverwendbare bags and bottles zu investieren
+        </li>
+        <li>Seifenshampoo statt Flaschen-Shampoo!!
+        </li>
+        <li>Eine Pflanzenbasierte beziehungsweise regionale Ernährung. (Tipp: Schau auf's Siegel!)
+        </li>
+        <li>Zuhause kochen wenn`s möglich ist (Vor allem Lieferservice erzeugt sehr viel Müll)
+        </li>
+        <li>Vintage statt Fast-Fashion Investiere liebe in einzigartige Secondhand-Teile anstatt in das 15. T-Shirt was sowieso jeder hat!
+        </li>
+        <li>kauf nur was du wirklich brauchst
+        </li>
+        <li>wiederverwenden statt wegwerfen
+        </li>
+        <li>Fahrradfahren wie in Holland! (Oder nutze die Öffis oder Car-Sharing Angebote)
+        </li>
+</ol>
+      {{outlet}}</div>
   </div>
 </div>
